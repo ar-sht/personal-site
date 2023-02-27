@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/729e23234c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css' )}}">
+  <title>Ari Shtein</title>
+</head>
+<body>
+<nav>
+  <a href="{{ url_for('index') }}" class="logo-link">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo-img">
+      <span class="logo-text">Home</span>
+    </div>
+  </a>
+  <div class="nav-menu-btn">
+    <i class="fa-solid fa-bars nav-menu-icon"></i>
+  </div>
+  <ul id="links">
+    <li class="link {{ 'active' if featured_active }}"><a href="{{ url_for('featured') }}">Featured Projects</a></li>
+    <li class="link {{ 'active' if directory_active }}"><a href="{{ url_for('directory') }}">Project Directory</a></li>
+    <li class="link {{ 'active' if about_active }}"><a href="{{ url_for('about') }}">About Me</a></li>
+  </ul>
+</nav>
+<div class="body">
+  <header>
+    <h1 class="heading">This Site</h1>
+    <h2 class="subheading">Its purpose & construction</h2>
+  </header>
+  <article class="about-site">
+    <h3 class="article-heading">What is this thing?</h3>
+    <p id="about-site">This site was created to showcase my program-y abilities. It uses Flask for server-y backend things including classifying & searching through all my projects.</p>
+  </article>
+</div>
+</body>
+</html>

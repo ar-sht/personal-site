@@ -1,0 +1,70 @@
+nav {
+    background-color: hsl(210, 85%, 15%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a.logo-link {
+    width: 15vw;
+    color: white;
+    text-decoration: none;
+}
+
+div.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img.logo-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+span.logo-text {
+    font: 400 1.5em 'PT Sans';
+}
+
+div.nav-menu-btn {
+    display: none;
+}
+
+ul#links {
+    width: 60vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+li.link {
+    padding: 20px 2vw;
+}
+
+li.link.active {
+    background-color: hsl(200, 40%, 90%);
+}
+
+li.link>a {
+    font: 300 1.1em 'PT Sans';
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+}
+
+li.link.active>a {
+    color: hsl(0, 0%, 20%);
+}
+
+li.link>a:hover {
+    color: hsl(0, 0%, 100%);
+    transition: color 0.2s;
+}
+
+li.link.active>a:hover {
+    color: hsl(0, 0%, 0%);
+    transition: color 0.2s;
+}

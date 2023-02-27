@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/729e23234c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css' )}}">
+  <title>Title</title>
+</head>
+<body>
+<nav>
+  <a href="{{ url_for('index') }}" class="logo-link">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo-img">
+      <span class="logo-text">Home</span>
+    </div>
+  </a>
+  <div class="nav-menu-btn">
+    <i class="fa-solid fa-bars nav-menu-icon"></i>
+  </div>
+  <ul id="links">
+    <li class="link {{ 'active' if featured_active }}"><a href="{{ url_for('featured') }}">Featured Projects</a></li>
+    <li class="link {{ 'active' if directory_active }}"><a href="{{ url_for('directory') }}">Project Directory</a></li>
+    <li class="link {{ 'active' if about_active }}"><a href="{{ url_for('about') }}">About Me</a></li>
+  </ul>
+</nav>
+</body>
+</html>
