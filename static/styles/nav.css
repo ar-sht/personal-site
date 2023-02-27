@@ -1,13 +1,13 @@
 nav {
-    background-color: hsl(210, 85%, 15%);
+    background-color: #062647;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 a.logo-link {
-    width: 15vw;
+    width: 100px;
     color: white;
     text-decoration: none;
 }
@@ -20,12 +20,7 @@ div.logo {
 }
 
 img.logo-img {
-    width: 40px;
-    margin-right: 10px;
-}
-
-span.logo-text {
-    font: 400 1.5em 'PT Sans';
+    height: 30px;
 }
 
 div.nav-menu-btn {
@@ -42,29 +37,34 @@ ul#links {
 }
 
 li.link {
-    padding: 20px 2vw;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li.link.active {
-    background-color: hsl(200, 40%, 90%);
+    background-color: #dbe9f0;
 }
 
 li.link>a {
-    font: 300 1.1em 'PT Sans';
-    color: hsl(0, 0%, 80%);
+    font: 400 1.1em 'Lato';
+    color: #ddd;
     text-decoration: none;
 }
 
 li.link.active>a {
-    color: hsl(0, 0%, 20%);
+    font: 600 1.1em 'Lato';
+    color: #222;
 }
 
 li.link>a:hover {
-    color: hsl(0, 0%, 100%);
+    color: #fff;
     transition: color 0.2s;
 }
 
 li.link.active>a:hover {
-    color: hsl(0, 0%, 0%);
+    color: #000;
     transition: color 0.2s;
 }

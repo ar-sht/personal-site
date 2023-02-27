@@ -1,3 +1,7 @@
+body {
+    background: #dbe9f0;
+}
+
 header {
     margin: 5vh 0;
     display: flex;
@@ -7,14 +11,42 @@ header {
 }
 
 h1.heading {
-    font: 600 4em 'PT sans', sans-serif;
+    font: 600 4em 'Lato', sans-serif;
 }
 
 h2.subheading {
-    font: 400 2em cursive;
+    font: 400 2.5em cursive;
     font-style: italic;
 }
 
 h3.article-heading {
-    font: 300 2em 'PT sans', sans-serif;
+    font: 400 2.5em 'Lato', sans-serif;
+    text-align: center;
+}
+
+p.block {
+    font: 400 1.5em 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+article {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.paragraph {
+    margin: 3vh 0;
+}
+
+a#github {
+    color: #062647;
+}
+
+a#github:hover {
+    color: #000000;
+    transition: color 0.2s;
 }

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <script src="https://kit.fontawesome.com/729e23234c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css' )}}">
@@ -13,7 +16,6 @@
   <a href="{{ url_for('index') }}" class="logo-link">
     <div class="logo">
       <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo-img">
-      <span class="logo-text">Home</span>
     </div>
   </a>
   <div class="nav-menu-btn">
@@ -27,12 +29,18 @@
 </nav>
 <div class="body">
   <header>
-    <h1 class="heading">This Site</h1>
+    <h1 class="heading">About This Site</h1>
     <h2 class="subheading">Its purpose & construction</h2>
   </header>
   <article class="about-site">
-    <h3 class="article-heading">What is this thing?</h3>
-    <p id="about-site">This site was created to showcase my program-y abilities. It uses Flask for server-y backend things including classifying & searching through all my projects.</p>
+    <div class="paragraph">
+      <h3 class="article-heading">What is this website?</h3>
+      <p class="block" id="about-site">This site was created to showcase my program-y abilities. It uses Flask for server-y backend things including classifying & searching through all my projects.</p>
+    </div>
+    <div class="paragraph">
+      <h3 class="article-heading">Why does it exist?</h3>
+      <p class="block" id="why-site">It's a good display of my abilities. It doesn't really do anything that <a id="github" href="https://www.github.com/ar-sht">my GitHub page</a> doesn't, but its URL is just my name, so that's pretty cool.</p>
+    </div>
   </article>
 </div>
 </body>
